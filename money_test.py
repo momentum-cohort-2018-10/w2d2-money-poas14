@@ -32,12 +32,12 @@ def test_create_dinar():
 def test_currency_equality():
     assert USD == Currency("United States dollar", "USD", "$")
 
-
 def test_create_money():
     one_dollar = Money(1, USD)
     assert one_dollar.amount == 1
     assert one_dollar.currency == USD
 
+"""Passed up to here"""
 
 def test_dollars_to_str():
     one_dollar = Money(1, USD)
